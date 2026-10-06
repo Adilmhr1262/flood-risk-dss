@@ -1,0 +1,44 @@
+district_name,event_date,severity,rainfall_mm,affected_population,source,source_url
+Dadu,2010-08-20,5,,980000,NDMA via USAID Fact Sheet #18 (1 Oct 2010): floods affected 980000 people in Dadu District,https://reliefweb.int/report/pakistan/pakistan-floods-fact-sheet-18-fiscal-year-fy-2010
+Jacobabad,2010-08-10,5,,,WHO worst-affected districts list (2010 floods),https://pmc.ncbi.nlm.nih.gov/articles/PMC3625620/
+Shikarpur,2010-08-10,5,,,WHO worst-affected districts list (2010 floods),https://pmc.ncbi.nlm.nih.gov/articles/PMC3625620/
+Ghotki,2010-08-10,5,,,WHO worst-affected districts list (2010 floods),https://pmc.ncbi.nlm.nih.gov/articles/PMC3625620/
+Thatta,2010-08-25,5,,,PHF/IFRC worst-affected districts; UNHAS helicopter airlift to Thatta District,https://reliefweb.int/report/pakistan/pakistan-floods-fact-sheet-18-fiscal-year-fy-2010
+Larkana,2010-09-06,4,,,USAID Fact Sheet #13: significant flooding continued in Larkana District,https://reliefweb.int/report/pakistan/pakistan-floods-fact-sheet-13-fiscal-year-fy-2010
+Sukkur,2010-08-15,4,,,IRIN via ReliefWeb: ~400 villages east of Indus flooded in Sukkur district,https://reliefweb.int/report/pakistan/upper-sindh-pakistan-superflood-leaves-huge-numbers-displaced
+Rajanpur,2010-08-10,5,,,PHF 31 Jul 2011: Rajanpur among most severely affected districts in Punjab,https://reliefweb.int/disaster/fl-2010-000141-pak
+Dera Ghazi Khan,2010-08-10,5,,,PHF 31 Jul 2011: D.G. Khan among most severely affected districts in Punjab,https://reliefweb.int/disaster/fl-2010-000141-pak
+Hyderabad,2010-08-20,3,,,IRIN via ReliefWeb: 10000 people evacuated in Hyderabad area,https://reliefweb.int/report/pakistan/upper-sindh-pakistan-superflood-leaves-huge-numbers-displaced
+Badin,2011-08-15,5,615.3,,NDMA/ACT appeal: Badin among worst-affected districts (2011 monsoon),https://reliefweb.int/report/pakistan/assistance-flood-affected-sindh-balochistan-province-pak111-revision-1
+Dadu,2011-08-20,4,,,ReliefWeb: Dadu among worst-affected districts (2011 Sindh floods),https://reliefweb.int/disaster/fl-2011-000109-pak
+Thatta,2011-08-20,4,,,NDMA/ACT appeal: Thatta among worst-affected districts (2011 monsoon),https://reliefweb.int/report/pakistan/assistance-flood-affected-sindh-balochistan-province-pak111-revision-1
+Jacobabad,2011-08-20,4,,,ReliefWeb: Jacobabad among worst-affected districts (2011 Sindh floods),https://reliefweb.int/disaster/fl-2011-000109-pak
+Hyderabad,2011-08-20,3,,,"ReliefWeb/NDMA: 2011 Sindh monsoon floods affected all 23 districts (300+ killed, 6M affected)",https://reliefweb.int/disaster/fl-2011-000109-pak
+Karachi,2011-08-20,2,,,"ReliefWeb/NDMA: 2011 Sindh monsoon floods affected all 23 districts (300+ killed, 6M affected)",https://reliefweb.int/disaster/fl-2011-000109-pak
+Ghotki,2011-09-01,3,,,"ReliefWeb/NDMA: 2011 Sindh monsoon floods affected all 23 districts (300+ killed, 6M affected)",https://reliefweb.int/disaster/fl-2011-000109-pak
+Larkana,2011-09-01,3,,,"ReliefWeb/NDMA: 2011 Sindh monsoon floods affected all 23 districts (300+ killed, 6M affected)",https://reliefweb.int/disaster/fl-2011-000109-pak
+Shikarpur,2011-09-01,3,,,"ReliefWeb/NDMA: 2011 Sindh monsoon floods affected all 23 districts (300+ killed, 6M affected)",https://reliefweb.int/disaster/fl-2011-000109-pak
+Jacobabad,2012-09-10,4,,,NDMA via PPF: 41 killed 77 injured in Jacobabad (2012 monsoon floods),https://pakistanpressfoundation.org/2012-floods-hit-sindh-the-hardest-national-disaster-management-authority/
+Shikarpur,2012-09-10,4,,,NDMA via PPF: 51 killed 259 injured in Shikarpur (2012 monsoon floods),https://pakistanpressfoundation.org/2012-floods-hit-sindh-the-hardest-national-disaster-management-authority/
+Ghotki,2012-09-10,4,,,NDMA/OCHA 2012 monsoon floods assessment: Ghotki among hardest-hit districts,https://www.slideserve.com/kayea/2012-monsoon-floods-assessment-impact-and-response-powerpoint-ppt-presentation
+Dadu,2012-09-10,3,,,NDMA/OCHA 2012 monsoon floods assessment: Dadu among hardest-hit districts,https://www.slideserve.com/kayea/2012-monsoon-floods-assessment-impact-and-response-powerpoint-ppt-presentation
+Dera Ghazi Khan,2012-09-10,4,,,NDMA 2012: D.G. Khan among 7 severely affected districts (IFRC sitrep),https://go-api.ifrc.org/publicfile/download?path=/docs/appeals/rpts12/&name=IBPKfl16101205.pdf
+Rajanpur,2012-09-10,4,,,NDMA 2012: Rajanpur among 7 severely affected districts (IFRC sitrep),https://go-api.ifrc.org/publicfile/download?path=/docs/appeals/rpts12/&name=IBPKfl16101205.pdf
+Dera Ghazi Khan,2013-08-20,3,,,PRCS rapid assessment of DG Khan district (monsoon floods Aug 2013),https://reliefweb.int/report/pakistan/monsoon-info-report-23-08-13
+Rajanpur,2013-08-20,3,,,PRCS rapid assessment of Rajanpur district (monsoon floods Aug 2013),https://reliefweb.int/report/pakistan/monsoon-info-report-23-08-13
+Rajanpur,2015-07-20,4,,,HRF situation report: Rajanpur worst-affected district; Indus discharge 563932 cusecs at Kot Mithan; hill-torrent flash floods 18-19 Jul 2015,https://reliefweb.int/report/pakistan/situation-analysis-report-district-rajanpur-flood-2015-situation-report-1-july-25
+Dera Ghazi Khan,2015-07-22,3,,,FFC Annual Flood Report 2015: breach 22 Jul 2015 at Ganda Jhakkar Imam Shah (D.G. Khan); low-lying Indus areas affected,https://mowr.gov.pk:443/SiteImage/Misc/files/2015 Annual Flood Report of FFC.pdf
+Karachi,2016-08-07,3,126,,Dawn via ReliefWeb (2016): 11 killed in Karachi rain incidents; 126mm recorded; FloodList: 21 dead in urban Sindh incl. Karachi and Hyderabad,https://reliefweb.int/report/pakistan/rain-brings-grief
+Hyderabad,2016-08-07,3,77,,FloodList Aug 2016: Hyderabad recorded 77mm in 24h; 21 dead in urban Sindh incl. Karachi and Hyderabad,https://floodlist.com/asia/pakistan-floods-sindh-balochistan-august-2016
+Karachi,2019-07-29,3,69.4,,Dawn via ReliefWeb 30 Jul 2019: 16 dead in Sindh (mostly Karachi) in first monsoon spell; 69.4mm in a day,https://reliefweb.int/report/pakistan/monsoon-rains-leave-16-dead-sindh
+Karachi,2020-08-27,4,484,,Watchers/PMD: Karachi record rainfall Aug 2020 (484mm; 41 killed),https://watchers.news/2020/08/28/karachi-record-rainfall-pakistan-2020/
+Dadu,2022-08-20,5,,849380,PDMA Sindh Flood Impact Report 2022: Dadu 61 deaths; 849380 affected,https://pdma.gos.pk/Documents/Reports/Flood 2022 In Sindh.pdf
+Larkana,2022-08-20,5,,1217428,PDMA Sindh Flood Impact Report 2022: Larkana 71 deaths; 1217428 affected,https://pdma.gos.pk/Documents/Reports/Flood 2022 In Sindh.pdf
+Jacobabad,2022-08-20,5,,545230,PDMA Sindh Flood Impact Report 2022: Jacobabad 38 deaths; 545230 affected,https://pdma.gos.pk/Documents/Reports/Flood 2022 In Sindh.pdf
+Shikarpur,2022-08-20,5,,400000,PDMA Sindh Flood Impact Report 2022: Shikarpur 111 deaths; ~400000 affected,https://pdma.gos.pk/Documents/Reports/Flood 2022 In Sindh.pdf
+Ghotki,2022-08-20,5,,907059,PDMA Sindh Flood Impact Report 2022: Ghotki 20 deaths; 907059 affected,https://pdma.gos.pk/Documents/Reports/Flood 2022 In Sindh.pdf
+Badin,2022-08-20,4,,277502,PDMA Sindh Flood Impact Report 2022: Badin 41 deaths; 277502 affected,https://pdma.gos.pk/Documents/Reports/Flood 2022 In Sindh.pdf
+Thatta,2022-08-20,4,,227156,PDMA Sindh Flood Impact Report 2022: Thatta 13 deaths; 227156 affected,https://pdma.gos.pk/Documents/Reports/Flood 2022 In Sindh.pdf
+Sukkur,2022-08-20,4,,393810,PDMA Sindh Flood Impact Report 2022: Sukkur 39 deaths; 393810 affected,https://pdma.gos.pk/Documents/Reports/Flood 2022 In Sindh.pdf
+Hyderabad,2022-08-20,3,,30240,PDMA Sindh Flood Impact Report 2022: Hyderabad 13 deaths; 30240 affected,https://pdma.gos.pk/Documents/Reports/Flood 2022 In Sindh.pdf
+Karachi,2022-08-20,4,,17137,PDMA Sindh Flood Impact Report 2022: Karachi 66 deaths; 17137 affected,https://pdma.gos.pk/Documents/Reports/Flood 2022 In Sindh.pdf

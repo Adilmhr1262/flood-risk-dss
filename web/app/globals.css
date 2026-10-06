@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  /* FloodSafe Pakistan — government emergency platform palette */
+  --color-navy-50: #eef3fa;
+  --color-navy-100: #dbe6f5;
+  --color-navy-200: #b9cfe9;
+  --color-navy-600: #1f4c8a;
+  --color-navy-700: #16386a;
+  --color-navy-800: #10294f;
+  --color-navy-900: #0a1a33;
+  --color-navy-950: #060f1f;
+
+  --color-brand-50: #fff4ed;
+  --color-brand-100: #ffe6d5;
+  --color-brand-500: #f97316;
+  --color-brand-600: #ea580c;
+  --color-brand-700: #c2410c;
+
+  --color-alert-600: #dc2626;
+  --color-alert-700: #b91c1c;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0a1a33;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.45s ease-out both;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+/* ---- Operations-centre polish ---- */
+
+/* Card hover lift for interactive surfaces */
+.card-lift {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+.card-lift:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 25px -8px rgb(6 15 31 / 0.18),
+    0 4px 10px -4px rgb(6 15 31 / 0.1);
+}
+
+/* Brand-coloured text selection */
+::selection {
+  background: #ea580c;
+  color: #fff;
+}
+
+/* Slim, theme-matched scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #b9cfe9 transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #b9cfe9;
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Consistent, visible keyboard focus */
+:focus-visible {
+  outline: 2px solid #ea580c;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Leaflet popup polish — match the platform cards */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow:
+    0 12px 32px -8px rgb(6 15 31 / 0.28),
+    0 4px 12px -4px rgb(6 15 31 / 0.12);
+}
+.leaflet-popup-content {
+  margin: 14px 16px;
+  line-height: 1.45;
+}
+.leaflet-popup-tip {
+  box-shadow: 0 4px 12px -4px rgb(6 15 31 / 0.2);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Leaflet panes must sit below sticky navbars/dropdowns */
+.leaflet-container {
+  font-family: var(--font-sans);
+  z-index: 0;
+}
+.leaflet-pane,
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 0;
+}

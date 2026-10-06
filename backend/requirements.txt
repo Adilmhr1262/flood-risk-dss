@@ -1,0 +1,25 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10
+alembic==1.20.0
+geoalchemy2==0.16.0
+shapely==2.0.6
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1  # passlib 1.7.4 is incompatible with bcrypt>=4.1
+scikit-learn==1.5.2
+pandas==2.2.3
+numpy==2.1.3
+joblib==1.4.2
+xgboost==2.1.4  # enables --model xgb in backend/ml/train.py and the Phase 3 research models
+matplotlib==3.9.4  # confusion-matrix figures for model evaluation (docs/img/)
+python-dotenv==1.0.1
+email-validator==2.2.0
+pytest==8.3.4
+httpx==0.28.1
+python-multipart
+apscheduler==3.10.4  # Phase 6 automated early-warning scheduler
+firebase-admin==6.5.0  # Phase 6 FCM push; optional at runtime (degraded log mode without credentials)

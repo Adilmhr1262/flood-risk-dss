@@ -1,0 +1,46 @@
+{
+  "accuracy": 0.8611,
+  "precision": 1.0,
+  "recall": 0.4444,
+  "f1": 0.6154,
+  "roc_auc": 0.9547,
+  "confusion_matrix": [
+    [
+      27,
+      0
+    ],
+    [
+      5,
+      4
+    ]
+  ],
+  "cv_f1_mean": 0.6147,
+  "cv_f1_std": 0.2073,
+  "model": "rf",
+  "feature_columns": [
+    "rainfall_mm",
+    "temperature_c",
+    "humidity_pct",
+    "elevation_m",
+    "river_distance_km",
+    "slope_deg",
+    "population_density",
+    "prev_flood_events",
+    "last_severity",
+    "vulnerability_index"
+  ],
+  "importance_method": "built-in",
+  "trained_at": "2026-09-26T07:47:41.746445+00:00",
+  "n_rows": 180,
+  "n_train": 144,
+  "n_test": 36,
+  "data_source": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+  "dataset": {
+    "source": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+    "sha256": "4b478ea58d6af1f91dd65540bc32cb3e770badc428313c779d76b2700418fb62",
+    "n_rows": 180,
+    "year_min": 2010,
+    "year_max": 2024
+  },
+  "range_issues": []
+}

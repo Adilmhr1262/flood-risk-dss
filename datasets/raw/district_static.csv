@@ -1,0 +1,13 @@
+district_name,latitude,longitude,elevation_m,river_distance_km,slope_deg,population_density_per_km2
+Badin,24.66,68.84,11,38,0.5,265
+Dadu,26.73,67.78,62,14,1.2,268
+Dera Ghazi Khan,30.06,70.64,137,11,1.6,245
+Ghotki,28.00,69.32,84,10,1.1,255
+Hyderabad,25.40,68.37,21,18,0.9,610
+Jacobabad,28.28,68.44,55,34,0.9,375
+Karachi,24.86,67.01,8,62,0.7,3650
+Larkana,27.56,68.21,51,26,1.0,420
+Rajanpur,29.10,70.32,122,9,1.4,160
+Shikarpur,27.96,68.64,56,19,1.0,480
+Sukkur,27.70,68.86,64,3.5,0.8,530
+Thatta,24.75,67.92,16,24,0.6,175

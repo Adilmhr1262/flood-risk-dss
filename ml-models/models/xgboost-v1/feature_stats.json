@@ -1,0 +1,58 @@
+{
+  "rainfall_mm": {
+    "mean": 200.831806,
+    "std": 161.983024
+  },
+  "temperature_c": {
+    "mean": 32.919056,
+    "std": 1.721443
+  },
+  "humidity_pct": {
+    "mean": 59.589444,
+    "std": 8.955785
+  },
+  "elevation_m": {
+    "mean": 57.25,
+    "std": 39.862456
+  },
+  "river_distance_km": {
+    "mean": 21.697917,
+    "std": 13.883505
+  },
+  "slope_deg": {
+    "mean": 0.975,
+    "std": 0.306699
+  },
+  "population_density": {
+    "mean": 386.291667,
+    "std": 196.303172
+  },
+  "prev_flood_events": {
+    "mean": 2.3,
+    "std": 1.232248
+  },
+  "last_severity": {
+    "mean": 4.369444,
+    "std": 0.912918
+  },
+  "vulnerability_index": {
+    "mean": 0.331487,
+    "std": 0.120906
+  },
+  "rain_intensity": {
+    "mean": 125.131719,
+    "std": 109.592513
+  },
+  "lowland_river": {
+    "mean": 0.001497,
+    "std": 0.000894
+  },
+  "exposure_index": {
+    "mean": 19.187412,
+    "std": 7.210116
+  },
+  "flood_history_score": {
+    "mean": 2.3,
+    "std": 1.232248
+  }
+}

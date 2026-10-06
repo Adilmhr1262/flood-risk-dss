@@ -1,0 +1,16 @@
+{
+  "flood_history_score": 0.2044,
+  "prev_flood_events": 0.1331,
+  "rainfall_mm": 0.1137,
+  "population_density": 0.078,
+  "temperature_c": 0.0767,
+  "rain_intensity": 0.0702,
+  "slope_deg": 0.0587,
+  "lowland_river": 0.0586,
+  "last_severity": 0.0434,
+  "exposure_index": 0.0406,
+  "humidity_pct": 0.032,
+  "vulnerability_index": 0.032,
+  "river_distance_km": 0.0309,
+  "elevation_m": 0.0277
+}

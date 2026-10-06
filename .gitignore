@@ -1,0 +1,32 @@
+# Environment and secrets — never publish
+.env
+.env.local
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Flutter / mobile builds
+mobile/build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Database backups (local only)
+database/backups/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

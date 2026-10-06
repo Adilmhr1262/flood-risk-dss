@@ -1,0 +1,16 @@
+[
+  "rainfall_mm",
+  "temperature_c",
+  "humidity_pct",
+  "elevation_m",
+  "river_distance_km",
+  "slope_deg",
+  "population_density",
+  "prev_flood_events",
+  "last_severity",
+  "vulnerability_index",
+  "rain_intensity",
+  "lowland_river",
+  "exposure_index",
+  "flood_history_score"
+]

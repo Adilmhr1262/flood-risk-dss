@@ -1,0 +1,245 @@
+{
+  "randomforest": {
+    "registry_name": "randomforest-v1",
+    "description": "Random Forest classifier (300 trees, class_weight=balanced) trained on the Sindh 2010-2024 district-year research dataset: 180 rows, 43 flood years, ERA5 monsoon weather + static district attributes.",
+    "hyperparameters": {
+      "n_estimators": 300,
+      "max_depth": null,
+      "min_samples_split": 2,
+      "class_weight": "balanced"
+    },
+    "training_config": {
+      "test_size": 0.2,
+      "stratified": true,
+      "random_state": 42,
+      "cv": "StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+      "cv_scoring": "f1",
+      "scaler": "StandardScaler"
+    },
+    "metrics": {
+      "accuracy": 0.8611,
+      "precision": 1.0,
+      "recall": 0.4444,
+      "f1": 0.6154,
+      "roc_auc": 0.9547,
+      "confusion_matrix": [
+        [
+          27,
+          0
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "cv_f1_mean": 0.6147,
+      "cv_f1_std": 0.2073,
+      "model": "rf",
+      "feature_columns": [
+        "rainfall_mm",
+        "temperature_c",
+        "humidity_pct",
+        "elevation_m",
+        "river_distance_km",
+        "slope_deg",
+        "population_density",
+        "prev_flood_events",
+        "last_severity",
+        "vulnerability_index"
+      ],
+      "importance_method": "built-in",
+      "trained_at": "2026-09-26T07:47:41.746445+00:00",
+      "n_rows": 180,
+      "n_train": 144,
+      "n_test": 36,
+      "data_source": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+      "dataset": {
+        "source": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+        "sha256": "4b478ea58d6af1f91dd65540bc32cb3e770badc428313c779d76b2700418fb62",
+        "n_rows": 180,
+        "year_min": 2010,
+        "year_max": 2024
+      },
+      "range_issues": []
+    },
+    "feature_importance": {
+      "rainfall_mm": 0.2007,
+      "rain_intensity": 0.1734,
+      "temperature_c": 0.1422,
+      "exposure_index": 0.0877,
+      "humidity_pct": 0.0822,
+      "flood_history_score": 0.0641,
+      "prev_flood_events": 0.0592,
+      "slope_deg": 0.04,
+      "elevation_m": 0.0331,
+      "vulnerability_index": 0.0265,
+      "lowland_river": 0.0245,
+      "river_distance_km": 0.0241,
+      "population_density": 0.0221,
+      "last_severity": 0.0202
+    }
+  },
+  "xgboost": {
+    "registry_name": "xgboost-v1",
+    "description": "XGBoost gradient-boosted trees (300 rounds, max_depth=6, lr=0.05) trained on the Sindh 2010-2024 district-year research dataset.",
+    "hyperparameters": {
+      "n_estimators": 300,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9,
+      "eval_metric": "logloss"
+    },
+    "training_config": {
+      "test_size": 0.2,
+      "stratified": true,
+      "random_state": 42,
+      "cv": "StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+      "cv_scoring": "f1",
+      "scaler": "StandardScaler"
+    },
+    "metrics": {
+      "accuracy": 0.9167,
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1": 0.8,
+      "roc_auc": 0.9465,
+      "confusion_matrix": [
+        [
+          27,
+          0
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "cv_f1_mean": 0.6974,
+      "cv_f1_std": 0.0935,
+      "model": "xgb",
+      "feature_columns": [
+        "rainfall_mm",
+        "temperature_c",
+        "humidity_pct",
+        "elevation_m",
+        "river_distance_km",
+        "slope_deg",
+        "population_density",
+        "prev_flood_events",
+        "last_severity",
+        "vulnerability_index"
+      ],
+      "importance_method": "built-in",
+      "trained_at": "2026-09-26T07:47:42.595559+00:00",
+      "n_rows": 180,
+      "n_train": 144,
+      "n_test": 36,
+      "data_source": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+      "dataset": {
+        "source": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+        "sha256": "4b478ea58d6af1f91dd65540bc32cb3e770badc428313c779d76b2700418fb62",
+        "n_rows": 180,
+        "year_min": 2010,
+        "year_max": 2024
+      },
+      "range_issues": []
+    },
+    "feature_importance": {
+      "flood_history_score": 0.2044,
+      "prev_flood_events": 0.1331,
+      "rainfall_mm": 0.1137,
+      "population_density": 0.078,
+      "temperature_c": 0.0767,
+      "rain_intensity": 0.0702,
+      "slope_deg": 0.0587,
+      "lowland_river": 0.0586,
+      "last_severity": 0.0434,
+      "exposure_index": 0.0406,
+      "humidity_pct": 0.032,
+      "vulnerability_index": 0.032,
+      "river_distance_km": 0.0309,
+      "elevation_m": 0.0277
+    }
+  },
+  "mlp": {
+    "registry_name": "mlp-v1",
+    "description": "Multi-layer perceptron (64-32 hidden units, max_iter=800) trained on the Sindh 2010-2024 district-year research dataset. Feature importance via permutation importance (10 repeats) on the held-out test set.",
+    "hyperparameters": {
+      "hidden_layer_sizes": [
+        64,
+        32
+      ],
+      "max_iter": 800
+    },
+    "training_config": {
+      "test_size": 0.2,
+      "stratified": true,
+      "random_state": 42,
+      "cv": "StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+      "cv_scoring": "f1",
+      "scaler": "StandardScaler"
+    },
+    "metrics": {
+      "accuracy": 0.9444,
+      "precision": 1.0,
+      "recall": 0.7778,
+      "f1": 0.875,
+      "roc_auc": 0.963,
+      "confusion_matrix": [
+        [
+          27,
+          0
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "cv_f1_mean": 0.8028,
+      "cv_f1_std": 0.111,
+      "model": "mlp",
+      "feature_columns": [
+        "rainfall_mm",
+        "temperature_c",
+        "humidity_pct",
+        "elevation_m",
+        "river_distance_km",
+        "slope_deg",
+        "population_density",
+        "prev_flood_events",
+        "last_severity",
+        "vulnerability_index"
+      ],
+      "importance_method": "permutation",
+      "trained_at": "2026-09-26T07:47:47.328820+00:00",
+      "n_rows": 180,
+      "n_train": 144,
+      "n_test": 36,
+      "data_source": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+      "dataset": {
+        "source": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+        "sha256": "4b478ea58d6af1f91dd65540bc32cb3e770badc428313c779d76b2700418fb62",
+        "n_rows": 180,
+        "year_min": 2010,
+        "year_max": 2024
+      },
+      "range_issues": []
+    },
+    "feature_importance": {
+      "rainfall_mm": 0.2727,
+      "rain_intensity": 0.1718,
+      "temperature_c": 0.1342,
+      "vulnerability_index": 0.0898,
+      "lowland_river": 0.059,
+      "exposure_index": 0.0498,
+      "prev_flood_events": 0.0412,
+      "elevation_m": 0.0411,
+      "flood_history_score": 0.0381,
+      "population_density": 0.0355,
+      "river_distance_km": 0.0251,
+      "humidity_pct": 0.0211,
+      "last_severity": 0.0149,
+      "slope_deg": 0.0055
+    }
+  }
+}

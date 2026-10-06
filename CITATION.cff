@@ -1,0 +1,42 @@
+# This CITATION.cff file was generated for the Flood Risk Prediction and
+# Early Warning Decision Support System. Repository URL is a placeholder
+# until the project is published.
+cff-version: 1.2.0
+title: "Flood Risk Prediction and Early Warning Decision Support System"
+message: "If you use this software or the accompanying research, please cite it as below."
+type: software
+authors:
+  - family-names: Mahar
+    given-names: Aadil Ali
+    affiliation: "The Islamia University of Bahawalpur, Pakistan"
+year: 2026
+version: 1.0.0
+doi: 10.0000/flood-risk-dss.placeholder
+repository-code: "https://github.com/aadilmahar/flood-risk-dss"
+url: "https://github.com/aadilmahar/flood-risk-dss"
+abstract: "An open-source, machine learning-based flood risk prediction and
+  GIS decision support framework for disaster risk reduction, evaluated on a
+  purpose-built Sindh (Pakistan) 2010-2024 dataset. Includes a FastAPI +
+  PostgreSQL/PostGIS backend, an automated early warning cycle with push
+  notifications, a Leaflet decision-support dashboard, and a Flutter
+  community mobile application with verified citizen reporting."
+keywords:
+  - flood risk prediction
+  - machine learning
+  - GIS
+  - early warning systems
+  - disaster risk reduction
+  - Sindh
+  - Pakistan
+  - Sendai Framework
+license: MIT
+preferred-citation:
+  type: unpublished
+  title: "A Machine Learning-Based Flood Risk Prediction and GIS Decision
+    Support Framework for Disaster Risk Reduction: A Case Study of Sindh, Pakistan"
+  authors:
+    - family-names: Mahar
+      given-names: Aadil Ali
+      affiliation: "The Islamia University of Bahawalpur, Pakistan"
+  year: 2026
+  notes: "Research paper draft, docs/research-paper.md"

@@ -1,0 +1,68 @@
+{
+  "medians": {
+    "rainfall_mm": 142.8,
+    "temperature_c": 33.43,
+    "humidity_pct": 56.8,
+    "elevation_m": 55.5,
+    "river_distance_km": 18.5,
+    "slope_deg": 0.95,
+    "population_density": 321.5,
+    "prev_flood_events": 2.0,
+    "last_severity": 5.0,
+    "vulnerability_index": 0.34014999999999995
+  },
+  "bounds": {
+    "rainfall_mm": [
+      -220.93749999999997,
+      599.9625
+    ],
+    "temperature_c": [
+      27.973749999999992,
+      37.86375000000001
+    ],
+    "humidity_pct": [
+      33.21249999999999,
+      84.91250000000001
+    ],
+    "elevation_m": [
+      -54.125,
+      142.875
+    ],
+    "river_distance_km": [
+      -15.125,
+      53.875
+    ],
+    "slope_deg": [
+      0.2500000000000001,
+      1.65
+    ],
+    "population_density": [
+      -107.5,
+      852.5
+    ],
+    "prev_flood_events": [
+      -2.0,
+      6.0
+    ],
+    "last_severity": [
+      2.5,
+      6.5
+    ],
+    "vulnerability_index": [
+      0.10612500000000005,
+      0.5691249999999999
+    ]
+  },
+  "features": [
+    "rainfall_mm",
+    "temperature_c",
+    "humidity_pct",
+    "elevation_m",
+    "river_distance_km",
+    "slope_deg",
+    "population_density",
+    "prev_flood_events",
+    "last_severity",
+    "vulnerability_index"
+  ]
+}

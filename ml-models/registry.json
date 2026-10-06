@@ -1,0 +1,172 @@
+{
+  "rule-based-v1": {
+    "type": "rule-based",
+    "version": "v1.0.0-rule-based",
+    "description": "Deterministic weighted risk scoring engine: nine normalised features with fixed weights. Transparent baseline, always available.",
+    "always_available": true
+  },
+  "rf-v1": {
+    "type": "sklearn",
+    "version": "rf-v1",
+    "model": "rf",
+    "model_dir": "ml-models/models/rf-v1",
+    "description": "Random Forest classifier (300 trees) trained on live database flood records: 52 documented flood events plus 36 synthetic non-flood observations across 12 districts.",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "cv_f1_mean": 0.9749,
+      "cv_f1_std": 0.0308,
+      "confusion_matrix": [
+        [
+          7,
+          0
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "n_rows": 88,
+      "n_train": 70,
+      "n_test": 18
+    },
+    "trained_at": "2026-09-26T07:23:43.224241+00:00",
+    "data_source": "db",
+    "caveat": "Small training set (88 rows) with a synthetic negative class; metrics are optimistic and will improve as real non-flood observations are added."
+  },
+  "randomforest-v1": {
+    "type": "sklearn",
+    "version": "randomforest-v1",
+    "model": "randomforest",
+    "model_dir": "ml-models/models/randomforest-v1",
+    "description": "Random Forest classifier (300 trees, class_weight=balanced) trained on the Sindh 2010-2024 district-year research dataset: 180 rows, 43 flood years, ERA5 monsoon weather + static district attributes.",
+    "metrics": {
+      "accuracy": 0.8611,
+      "precision": 1.0,
+      "recall": 0.4444,
+      "f1": 0.6154,
+      "roc_auc": 0.9547,
+      "cv_f1_mean": 0.6147,
+      "cv_f1_std": 0.2073,
+      "confusion_matrix": [
+        [
+          27,
+          0
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "n_rows": 180,
+      "n_train": 144,
+      "n_test": 36,
+      "importance_method": "built-in",
+      "dataset_sha256": "4b478ea58d6af1f91dd65540bc32cb3e770badc428313c779d76b2700418fb62"
+    },
+    "trained_at": "2026-09-26T07:47:41.746445+00:00",
+    "data_source": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+    "dataset": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+    "data_card": "data/processed/DATA_CARD.md",
+    "caveat": "180 district-year rows, 43 flood years (23.9% positive). Negative class = no documented flood (reporting bias); metrics are honest but the sample is modest."
+  },
+  "randomforest": {
+    "type": "sklearn",
+    "version": "randomforest-v1",
+    "model": "randomforest",
+    "model_dir": "ml-models/models/randomforest-v1",
+    "alias_of": "randomforest-v1",
+    "description": "Alias for randomforest-v1: Random Forest classifier (300 trees, class_weight=balanced) trained on the Sindh 2010-2024 district-year research dataset: 180 rows, 43 flood years, ERA5 monsoon weather + static district attributes."
+  },
+  "xgboost-v1": {
+    "type": "sklearn",
+    "version": "xgboost-v1",
+    "model": "xgboost",
+    "model_dir": "ml-models/models/xgboost-v1",
+    "description": "XGBoost gradient-boosted trees (300 rounds, max_depth=6, lr=0.05) trained on the Sindh 2010-2024 district-year research dataset.",
+    "metrics": {
+      "accuracy": 0.9167,
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1": 0.8,
+      "roc_auc": 0.9465,
+      "cv_f1_mean": 0.6974,
+      "cv_f1_std": 0.0935,
+      "confusion_matrix": [
+        [
+          27,
+          0
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "n_rows": 180,
+      "n_train": 144,
+      "n_test": 36,
+      "importance_method": "built-in",
+      "dataset_sha256": "4b478ea58d6af1f91dd65540bc32cb3e770badc428313c779d76b2700418fb62"
+    },
+    "trained_at": "2026-09-26T07:47:42.595559+00:00",
+    "data_source": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+    "dataset": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+    "data_card": "data/processed/DATA_CARD.md",
+    "caveat": "180 district-year rows, 43 flood years (23.9% positive). Negative class = no documented flood (reporting bias); metrics are honest but the sample is modest."
+  },
+  "xgboost": {
+    "type": "sklearn",
+    "version": "xgboost-v1",
+    "model": "xgboost",
+    "model_dir": "ml-models/models/xgboost-v1",
+    "alias_of": "xgboost-v1",
+    "description": "Alias for xgboost-v1: XGBoost gradient-boosted trees (300 rounds, max_depth=6, lr=0.05) trained on the Sindh 2010-2024 district-year research dataset."
+  },
+  "mlp-v1": {
+    "type": "sklearn",
+    "version": "mlp-v1",
+    "model": "mlp",
+    "model_dir": "ml-models/models/mlp-v1",
+    "description": "Multi-layer perceptron (64-32 hidden units, max_iter=800) trained on the Sindh 2010-2024 district-year research dataset. Feature importance via permutation importance (10 repeats) on the held-out test set.",
+    "metrics": {
+      "accuracy": 0.9444,
+      "precision": 1.0,
+      "recall": 0.7778,
+      "f1": 0.875,
+      "roc_auc": 0.963,
+      "cv_f1_mean": 0.8028,
+      "cv_f1_std": 0.111,
+      "confusion_matrix": [
+        [
+          27,
+          0
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "n_rows": 180,
+      "n_train": 144,
+      "n_test": 36,
+      "importance_method": "permutation",
+      "dataset_sha256": "4b478ea58d6af1f91dd65540bc32cb3e770badc428313c779d76b2700418fb62"
+    },
+    "trained_at": "2026-09-26T07:47:47.328820+00:00",
+    "data_source": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+    "dataset": "/home/hatch/workspace/flood-risk-dss/data/processed/sindh_training_2010_2024.csv",
+    "data_card": "data/processed/DATA_CARD.md",
+    "caveat": "180 district-year rows, 43 flood years (23.9% positive). Negative class = no documented flood (reporting bias); metrics are honest but the sample is modest."
+  },
+  "mlp": {
+    "type": "sklearn",
+    "version": "mlp-v1",
+    "model": "mlp",
+    "model_dir": "ml-models/models/mlp-v1",
+    "alias_of": "mlp-v1",
+    "description": "Alias for mlp-v1: Multi-layer perceptron (64-32 hidden units, max_iter=800) trained on the Sindh 2010-2024 district-year research dataset. Feature importance via permutation importance (10 repeats) on the held-out test set."
+  }
+}

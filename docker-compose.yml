@@ -1,0 +1,47 @@
+# Flood Risk Prediction and Early Warning Decision Support System
+# Full stack: PostGIS database + FastAPI backend.
+#
+# Usage:
+#   cp backend/.env.example backend/.env   # then set SECRET_KEY + passwords
+#   docker compose up --build -d
+#   docker compose exec api python - <<'EOF'
+#   # (load schema + seed once) — see docs/deployment.md
+#   EOF
+# API: http://localhost:8000  ·  docs: http://localhost:8000/docs
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: flood-dss-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-flood_dss}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-flood_dss_dev}
+      POSTGRES_DB: ${POSTGRES_DB:-flood_risk_dss}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-flood_dss} -d ${POSTGRES_DB:-flood_risk_dss}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  api:
+    build: ./backend
+    container_name: flood-dss-api
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    environment:
+      # Compose wiring overrides whatever DATABASE_URL is in .env
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-flood_dss}:${POSTGRES_PASSWORD:-flood_dss_dev}@db:5432/${POSTGRES_DB:-flood_risk_dss}
+      APP_ENV: production
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${API_PORT:-8000}:8000"
+
+volumes:
+  pgdata:
